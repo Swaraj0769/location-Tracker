@@ -1,4 +1,5 @@
-const socket = io()
+const socket = io("wss://location-tracker-n422.onrender.com");  // Use your backend WebSocket URL
+
 
 if (navigator.geolocation) {     // navigator= many operation are happen through navigator in the browser
     navigator.geolocation.watchPosition((position) => {
